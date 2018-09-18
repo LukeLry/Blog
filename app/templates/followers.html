@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}Luke的博客系统 - {{ user.username }}{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    {% if endpoint=='main.followed_by' %}
+        <h1>{{ user.username }}的关注者</h1>
+    {% else %}
+        <h1>关注{{ user.username }}的人</h1>
+    {% endif %}
+</div>
+<table class="table table-hover followers">
+    <thead><tr><th>用户</th><th>关注时间</th></tr></thead>
+    {% for follow in follows %}
+    {% if follow.user != user %}
+    <tr>
+        <td>
+            <a href="{{ url_for('main.user', username = follow.user.username) }}">
+                <img class="img-rounded" src="{{ follow.user.gravatar(size=32) }}">
+                {{ follow.user.username }}
+            </a>
+        </td>
+        <td>{{ moment(follow.timestamp).format('L') }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+</table>
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, endpoint, username = user.username) }}
+</div>
+{% endblock %}

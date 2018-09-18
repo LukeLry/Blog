@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Luke的博客系统{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+<div class="container">
+<div class="row">
+<div class="col-md-12 well ">
+    <div class="page-header">
+        <h1>编辑你的信息</h1>
+    </div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            {{ wtf.quick_form(form) }}
+        </form>
+
+</div>
+</div>
+</div>
+{% endblock %}

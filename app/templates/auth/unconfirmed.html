@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Luke的博客系统 - 确认你的账户{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>
+        你好, {{ current_user.username }}
+    </h1>
+    <h3>你还没有确认你的账户</h3>
+    <p>
+        在你能够访问这个页面之前,必须确认你的账户。
+        一封邮件应该已经发到了你的注册邮箱。
+    </p>
+    <p>
+        重新发送邮件?
+        <a href="{{ url_for('auth.resend_confirmation') }}">点这里</a>
+    </p>
+</div>
+{% endblock %}

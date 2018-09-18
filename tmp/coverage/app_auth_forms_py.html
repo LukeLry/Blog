@@ -1,0 +1,207 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for app\auth\forms.py: 9%</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>app\auth\forms.py</b> :
+            <span class="pc_cov">9%</span>
+        </h1>
+
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+
+        <h2 class="stats">
+            38 statements &nbsp;
+            <span class="run hide_run shortkey_r button_toggle_run">2 run</span>
+            <span class="mis shortkey_m button_toggle_mis">36 missing</span>
+            <span class="exc shortkey_x button_toggle_exc">0 excluded</span>
+
+            
+                <span class="par run hide_run shortkey_p button_toggle_par">2 partial</span>
+            
+        </h2>
+    </div>
+</div>
+
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+
+<div id="source">
+    <table>
+        <tr>
+            <td class="linenos">
+<p id="n1" class="pln"><a href="#n1">1</a></p>
+<p id="n2" class="stm mis"><a href="#n2">2</a></p>
+<p id="n3" class="pln"><a href="#n3">3</a></p>
+<p id="n4" class="stm mis"><a href="#n4">4</a></p>
+<p id="n5" class="stm mis"><a href="#n5">5</a></p>
+<p id="n6" class="stm mis"><a href="#n6">6</a></p>
+<p id="n7" class="stm mis"><a href="#n7">7</a></p>
+<p id="n8" class="pln"><a href="#n8">8</a></p>
+<p id="n9" class="stm mis"><a href="#n9">9</a></p>
+<p id="n10" class="stm mis"><a href="#n10">10</a></p>
+<p id="n11" class="stm mis"><a href="#n11">11</a></p>
+<p id="n12" class="pln"><a href="#n12">12</a></p>
+<p id="n13" class="stm mis"><a href="#n13">13</a></p>
+<p id="n14" class="stm mis"><a href="#n14">14</a></p>
+<p id="n15" class="pln"><a href="#n15">15</a></p>
+<p id="n16" class="stm mis"><a href="#n16">16</a></p>
+<p id="n17" class="stm mis"><a href="#n17">17</a></p>
+<p id="n18" class="pln"><a href="#n18">18</a></p>
+<p id="n19" class="stm mis"><a href="#n19">19</a></p>
+<p id="n20" class="stm mis"><a href="#n20">20</a></p>
+<p id="n21" class="stm mis"><a href="#n21">21</a></p>
+<p id="n22" class="stm mis"><a href="#n22">22</a></p>
+<p id="n23" class="pln"><a href="#n23">23</a></p>
+<p id="n24" class="pln"><a href="#n24">24</a></p>
+<p id="n25" class="pln"><a href="#n25">25</a></p>
+<p id="n26" class="pln"><a href="#n26">26</a></p>
+<p id="n27" class="stm mis"><a href="#n27">27</a></p>
+<p id="n28" class="stm par run hide_run"><a href="#n28">28</a></p>
+<p id="n29" class="stm mis"><a href="#n29">29</a></p>
+<p id="n30" class="pln"><a href="#n30">30</a></p>
+<p id="n31" class="stm mis"><a href="#n31">31</a></p>
+<p id="n32" class="stm par run hide_run"><a href="#n32">32</a></p>
+<p id="n33" class="stm mis"><a href="#n33">33</a></p>
+<p id="n34" class="pln"><a href="#n34">34</a></p>
+<p id="n35" class="stm mis"><a href="#n35">35</a></p>
+<p id="n36" class="stm mis"><a href="#n36">36</a></p>
+<p id="n37" class="stm mis"><a href="#n37">37</a></p>
+<p id="n38" class="pln"><a href="#n38">38</a></p>
+<p id="n39" class="stm mis"><a href="#n39">39</a></p>
+<p id="n40" class="stm mis"><a href="#n40">40</a></p>
+<p id="n41" class="pln"><a href="#n41">41</a></p>
+<p id="n42" class="pln"><a href="#n42">42</a></p>
+<p id="n43" class="pln"><a href="#n43">43</a></p>
+<p id="n44" class="stm mis"><a href="#n44">44</a></p>
+<p id="n45" class="stm mis"><a href="#n45">45</a></p>
+<p id="n46" class="stm mis"><a href="#n46">46</a></p>
+<p id="n47" class="pln"><a href="#n47">47</a></p>
+<p id="n48" class="stm mis"><a href="#n48">48</a></p>
+<p id="n49" class="pln"><a href="#n49">49</a></p>
+<p id="n50" class="stm mis"><a href="#n50">50</a></p>
+<p id="n51" class="stm mis"><a href="#n51">51</a></p>
+<p id="n52" class="stm mis"><a href="#n52">52</a></p>
+<p id="n53" class="stm mis"><a href="#n53">53</a></p>
+<p id="n54" class="pln"><a href="#n54">54</a></p>
+<p id="n55" class="stm mis"><a href="#n55">55</a></p>
+<p id="n56" class="stm mis"><a href="#n56">56</a></p>
+<p id="n57" class="stm mis"><a href="#n57">57</a></p>
+<p id="n58" class="pln"><a href="#n58">58</a></p>
+
+            </td>
+            <td class="text">
+<p id="t1" class="pln"><span class="com"># -*- encoding=UTF-8 -*-</span><span class="strut">&nbsp;</span></p>
+<p id="t2" class="stm mis"><span class="key">from</span> <span class="nam">flask_wtf</span> <span class="key">import</span> <span class="nam">FlaskForm</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="com">#FlaskForm&#22522;&#31867;&#30001;Flask-wtf&#23450;&#20041; &#23383;&#27573;&#21644;&#39564;&#35777;&#20989;&#25968;&#21487;&#20197;&#30452;&#25509;&#20174;wt_forms&#21253;&#20013;&#23548;&#20837;</span><span class="strut">&nbsp;</span></p>
+<p id="t4" class="stm mis"><span class="key">from</span> <span class="nam">wtforms</span> <span class="key">import</span> <span class="nam">StringField</span><span class="op">,</span><span class="nam">PasswordField</span><span class="op">,</span><span class="nam">BooleanField</span><span class="op">,</span><span class="nam">SubmitField</span><span class="strut">&nbsp;</span></p>
+<p id="t5" class="stm mis"><span class="key">from</span> <span class="nam">wtforms</span><span class="op">.</span><span class="nam">validators</span> <span class="key">import</span> <span class="nam">DataRequired</span><span class="op">,</span><span class="nam">Length</span><span class="op">,</span><span class="nam">Email</span><span class="op">,</span><span class="nam">Regexp</span><span class="op">,</span><span class="nam">EqualTo</span><span class="strut">&nbsp;</span></p>
+<p id="t6" class="stm mis"><span class="key">from</span> <span class="nam">wtforms</span> <span class="key">import</span> <span class="nam">ValidationError</span><span class="strut">&nbsp;</span></p>
+<p id="t7" class="stm mis"><span class="key">from</span> <span class="op">.</span><span class="op">.</span><span class="nam">models</span> <span class="key">import</span> <span class="nam">User</span><span class="strut">&nbsp;</span></p>
+<p id="t8" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t9" class="stm mis"><span class="key">class</span> <span class="nam">LoginForm</span><span class="op">(</span><span class="nam">FlaskForm</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t10" class="stm mis">    <span class="nam">email</span><span class="op">=</span><span class="nam">StringField</span><span class="op">(</span><span class="str">u"&#37038;&#31665;"</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">Length</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">64</span><span class="op">)</span><span class="op">,</span><span class="nam">Email</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span>         <span class="com">#&#29992;&#30005;&#23376;&#37038;&#20214;&#20316;&#20026;&#29992;&#25143;&#21517;</span><span class="strut">&nbsp;</span></p>
+<p id="t11" class="stm mis">    <span class="nam">password</span><span class="op">=</span><span class="nam">PasswordField</span><span class="op">(</span><span class="str">u"&#23494;&#30721;"</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t12" class="pln">    <span class="com">#False &#20851;&#38381;&#27983;&#35272;&#22120;&#21518;&#29992;&#25143;&#20250;&#35805;&#36807;&#26399; True &#22312;&#29992;&#25143;&#27983;&#35272;&#22120;&#20013;&#20889;&#20837;&#19968;&#20010;&#38271;&#26399;&#30340;cookie &#35813;cookie&#21487;&#20197;&#22797;&#29616;&#29992;&#20250;&#35805;</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="stm mis">    <span class="nam">remember_me</span><span class="op">=</span><span class="nam">BooleanField</span><span class="op">(</span><span class="str">u"&#35760;&#20303;&#25105;"</span><span class="op">)</span>                                                 <span class="com">#&#22797;&#36873;&#26694; true  or false &#40664;&#35748;&#20026;true</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="stm mis">    <span class="nam">submit</span><span class="op">=</span><span class="nam">SubmitField</span><span class="op">(</span><span class="str">u"&#30331;&#38470;"</span><span class="op">)</span>                                                         <span class="com">#&#34920;&#21333;&#25552;&#20132;&#25353;&#38062;</span><span class="strut">&nbsp;</span></p>
+<p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t16" class="stm mis"><span class="key">class</span> <span class="nam">RegistrationForm</span><span class="op">(</span><span class="nam">FlaskForm</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t17" class="stm mis">    <span class="nam">email</span><span class="op">=</span><span class="nam">StringField</span><span class="op">(</span><span class="str">u"&#37038;&#31665;"</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">Length</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">64</span><span class="op">)</span><span class="op">,</span><span class="nam">Email</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t19" class="stm mis">    <span class="nam">username</span><span class="op">=</span><span class="nam">StringField</span><span class="op">(</span><span class="str">u"&#29992;&#25143;&#21517;"</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">Length</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">64</span><span class="op">)</span><span class="op">,</span><span class="nam">Regexp</span><span class="op">(</span><span class="str">'^[A-Za-z][A-Za-z0-9_]*$'</span><span class="op">,</span><span class="num">0</span><span class="op">,</span><span class="str">u"&#23494;&#30721;&#21482;&#33021;&#21253;&#21547;&#25968;&#23383;,&#23383;&#27597;&#21644;&#19979;&#21010;&#32447;"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="stm mis">    <span class="nam">password</span><span class="op">=</span><span class="nam">PasswordField</span><span class="op">(</span><span class="str">u"&#23494;&#30721;"</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">EqualTo</span><span class="op">(</span><span class="str">"password2"</span><span class="op">,</span><span class="nam">message</span><span class="op">=</span><span class="str">u"&#21069;&#21518;&#36755;&#20837;&#24517;&#39035;&#21305;&#37197;"</span><span class="op">)</span><span class="op">,</span><span class="nam">Length</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">64</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t21" class="stm mis">    <span class="nam">password2</span><span class="op">=</span><span class="nam">PasswordField</span><span class="op">(</span><span class="str">u"&#20877;&#27425;&#36755;&#20837;&#30830;&#35748;&#23494;&#30721;"</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">Length</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">64</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="stm mis">    <span class="nam">submit</span><span class="op">=</span><span class="nam">SubmitField</span><span class="op">(</span><span class="str">u"&#27880;&#20876;"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln">    <span class="com">#field &#23383;&#27573;&#32487;&#25215;&#33258;FlaskForm</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln">    <span class="com">#&#22914;&#26524;&#34920;&#21333;&#31867;&#20013;&#23450;&#20041;&#20102;validate_&#24320;&#22836;&#19988;&#21518;&#38754;&#36319;&#30528;&#23383;&#27573;&#21517;&#30340;&#26041;&#27861;</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln">    <span class="com">#&#36825;&#20010;&#26041;&#27861;&#23601;&#21644;&#24120;&#35268;&#39564;&#35777;&#20989;&#25968;&#19968;&#36215;&#35843;&#29992; &#20855;&#20307;&#22914;&#20309;&#23454;&#29616;&#30475;&#28304;&#30721;</span><span class="strut">&nbsp;</span></p>
+<p id="t27" class="stm mis">    <span class="key">def</span> <span class="nam">validate_email</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span class="nam">field</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="stm par run hide_run"><span class="annotate short">28&#x202F;&#x219B;&#x202F;29</span><span class="annotate long">line 28 didn't jump to line 29, because the condition on line 28 was never true</span>        <span class="key">if</span> <span class="nam">User</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">filter_by</span><span class="op">(</span><span class="nam">email</span><span class="op">=</span><span class="nam">field</span><span class="op">.</span><span class="nam">data</span><span class="op">)</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="stm mis">            <span class="key">raise</span> <span class="nam">ValidationError</span><span class="op">(</span><span class="str">u"&#37038;&#31665;&#24050;&#32463;&#23384;&#22312;"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t31" class="stm mis">    <span class="key">def</span> <span class="nam">validate_username</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span class="nam">field</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="stm par run hide_run"><span class="annotate short">32&#x202F;&#x219B;&#x202F;33</span><span class="annotate long">line 32 didn't jump to line 33, because the condition on line 32 was never true</span>        <span class="key">if</span> <span class="nam">User</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">filter_by</span><span class="op">(</span><span class="nam">username</span><span class="op">=</span><span class="nam">field</span><span class="op">.</span><span class="nam">data</span><span class="op">)</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="stm mis">            <span class="key">raise</span> <span class="nam">ValidationError</span><span class="op">(</span><span class="str">u"&#29992;&#25143;&#21517;&#24050;&#32463;&#23384;&#22312;"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t35" class="stm mis"><span class="key">class</span> <span class="nam">ChangePasswordForm</span><span class="op">(</span><span class="nam">FlaskForm</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="stm mis">    <span class="nam">old_password</span> <span class="op">=</span> <span class="nam">PasswordField</span><span class="op">(</span><span class="str">u"&#26087;&#23494;&#30721;"</span><span class="op">,</span> <span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t37" class="stm mis">    <span class="nam">password</span> <span class="op">=</span> <span class="nam">PasswordField</span><span class="op">(</span><span class="str">u"&#26032;&#23494;&#30721;"</span><span class="op">,</span> <span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span> <span class="nam">EqualTo</span><span class="op">(</span><span class="str">'password2'</span><span class="op">,</span> <span class="nam">message</span><span class="op">=</span><span class="str">u"&#21069;&#21518;&#36755;&#20837;&#24517;&#39035;&#21305;&#37197;"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="pln">    <span class="com">#&#34920;&#21333;&#20013;&#23436;&#25104;&#23494;&#30721;&#19982;&#30830;&#35748;&#23494;&#30721;&#19968;&#33268;&#24615;&#30340;&#39564;&#35777;</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="stm mis">    <span class="nam">password2</span> <span class="op">=</span> <span class="nam">PasswordField</span><span class="op">(</span><span class="str">u"&#30830;&#35748;&#26032;&#23494;&#30721;"</span><span class="op">,</span> <span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="stm mis">    <span class="nam">submit</span> <span class="op">=</span> <span class="nam">SubmitField</span><span class="op">(</span><span class="str">u"&#26356;&#26032;&#23494;&#30721;"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t41" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="com">#&#26377;2&#20010;&#39029;&#38754;&#20135;&#29983;&#65292;&#19968;&#20010;&#26159;&#35753;&#29992;&#25143;&#36755;&#20837;&#37038;&#31665;&#24182;&#21457;&#36865;&#37038;&#20214;&#30340;&#39029;&#38754;</span><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="com">#&#31532;&#20108;&#20010;&#26159;&#20320;&#37038;&#31665;&#28857;&#20987;&#38142;&#25509;&#36820;&#22238;&#36807;&#26469;&#30340;&#39029;&#38754;&#65292;&#21487;&#20197;&#20462;&#25913;&#23494;&#30721;</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="stm mis"><span class="key">class</span> <span class="nam">PasswordResetRequestForm</span><span class="op">(</span><span class="nam">FlaskForm</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t45" class="stm mis">    <span class="nam">email</span><span class="op">=</span><span class="nam">StringField</span><span class="op">(</span><span class="str">u'&#37038;&#31665;&#22320;&#22336;'</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">Length</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">64</span><span class="op">)</span><span class="op">,</span><span class="nam">Email</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="com">#&#25552;&#20132;&#34920;&#21333;&#20197;&#21457;&#36865;EMAIL</span><span class="strut">&nbsp;</span></p>
+<p id="t46" class="stm mis">    <span class="nam">submit</span> <span class="op">=</span> <span class="nam">SubmitField</span><span class="op">(</span><span class="str">u'&#21457;&#36865;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t47" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t48" class="stm mis"><span class="key">class</span> <span class="nam">PasswordResetForm</span><span class="op">(</span><span class="nam">FlaskForm</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t50" class="stm mis">    <span class="nam">email</span> <span class="op">=</span> <span class="nam">StringField</span><span class="op">(</span><span class="str">u'&#37038;&#31665;&#22320;&#22336;'</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">Email</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span>   <span class="com">#&#36825;&#19968;&#34892;&#29305;&#21035;&#27880;&#24847;&#65292;&#22914;&#26524;&#27809;&#26377;&#36825;&#19968;&#34892;&#30340;&#35805;&#65292;&#20320;&#21040;&#26368;&#21518;&#36335;&#30001;&#37324;&#38754;&#65292;&#27809;&#26377;&#21150;&#27861;&#23450;&#20301;&#20320;&#30340;&#20855;&#20307;&#36134;&#21495;&#30340;&#12290;</span><span class="strut">&nbsp;</span></p>
+<p id="t51" class="stm mis">    <span class="nam">newpassword</span><span class="op">=</span><span class="nam">PasswordField</span><span class="op">(</span><span class="str">u'&#26032;&#23494;&#30721;'</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">,</span><span class="nam">EqualTo</span><span class="op">(</span><span class="str">'newpassword2'</span><span class="op">,</span><span class="nam">message</span><span class="op">=</span><span class="str">u"&#21069;&#21518;&#36755;&#20837;&#24517;&#39035;&#21305;&#37197;"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t52" class="stm mis">    <span class="nam">newpassword2</span><span class="op">=</span><span class="nam">PasswordField</span><span class="op">(</span><span class="str">u'&#30830;&#35748;&#23494;&#30721;'</span><span class="op">,</span><span class="nam">validators</span><span class="op">=</span><span class="op">[</span><span class="nam">DataRequired</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="stm mis">    <span class="nam">submit</span> <span class="op">=</span> <span class="nam">SubmitField</span><span class="op">(</span><span class="str">u'&#20445;&#23384;&#26356;&#25913;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t54" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t55" class="stm mis">    <span class="key">def</span> <span class="nam">validate_email</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">field</span><span class="op">)</span><span class="op">:</span>                                              <span class="com">#&#36825;&#37324;&#21069;&#38754;&#23398;&#36807;&#30340;&#19996;&#35199;&#24046;&#28857;&#21448;&#24536;&#35760;&#20102;&#65292;&#20197;validate_&#24320;&#22836;&#30340;&#20989;&#25968;&#65292;&#20250;&#21644;&#26222;&#36890;&#39564;&#35777;&#20989;&#25968;&#19968;&#36215;&#34987;&#35843;&#29992;</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="stm mis">        <span class="key">if</span> <span class="nam">User</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">filter_by</span><span class="op">(</span><span class="nam">email</span><span class="op">=</span><span class="nam">field</span><span class="op">.</span><span class="nam">data</span><span class="op">)</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span> <span class="key">is</span> <span class="nam">None</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t57" class="stm mis">            <span class="key">raise</span> <span class="nam">ValidationError</span><span class="op">(</span><span class="str">u'&#26410;&#30693;&#37038;&#31665;'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t58" class="pln"><span class="strut">&nbsp;</span></p>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.1</a>,
+            created at 2018-09-13 19:39
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
