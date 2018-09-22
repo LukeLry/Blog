@@ -92,3 +92,4 @@ def deploy():
 if __name__=="__main__":
     manager.run()
     #app.run(debug=True,threaded=True)
+    #print("This is a test")
