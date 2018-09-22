@@ -44,8 +44,6 @@ if os.environ.get('FLASK_COVERAGE'):
 
 @manager.command
 def test(coverage=False):
-    """Run the unit tests."""
-
     """
     if coverage and not os.environ.get('FLASK_COVERAGE'):
         import sys
